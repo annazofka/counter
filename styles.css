@@ -1,1 +1,110 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
+button {
+	all: unset;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	height: 100vh;
+	background-image: radial-gradient(ellipse, #8c2c74, #550f84);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.counter {
+	background-color: #918fd2;
+	width: 480px;
+	height: 624px;
+	border-radius: 12px;
+	box-shadow: 0 25px 125px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.counter__title {
+	margin-top: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	opacity: 0.6;
+	font-weight: 500;
+}
+
+.counter__value {
+	color: #671878;
+	font-size: 220px;
+}
+
+.counter__reset-button {
+	cursor: pointer;
+}
+
+.counter__reset-icon {
+	opacity: 0.3;
+	font-size: 40px;
+	transition: 0.4s;
+}
+
+.counter__reset-icon:hover {
+	opacity: 0.5;
+}
+
+.counter__buttons {
+	background-color: #671878;
+	height: 120px;
+	width: 100%;
+	margin-top: auto;
+	border-bottom-right-radius: 11px;
+	border-bottom-left-radius: 11px;
+	display: flex;
+}
+
+.counter__button {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.counter__button:hover {
+	background-color: #761e74;
+}
+
+.counter__button--decrease {
+}
+
+.counter__button--increase {
+	border-left: 1px solid #8888d4;
+}
+
+.counter__icon {
+	color: #e8a33f;
+	font-size: 40px;
+	opacity: 0.9;
+}
+
+@media (max-width: 680px) or (max-height: 730px) {
+	.counter {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+	}
+
+	.counter__title {
+		margin-top: 120px;
+	}
+
+	.counter__buttons {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+}
